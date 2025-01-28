@@ -1,0 +1,201 @@
+* {
+  overflow-x: hidden;
+}
+
+html * {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* body {
+  background-image: url(/img/backgroundImg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+} */
+
+@keyframes bgcolor {
+  0% {
+    background-color: #97d0fa;
+  }
+
+  30% {
+    background-color: #a4d68b;
+  }
+
+  60% {
+    background-color: #dc9e75;
+  }
+
+  90% {
+    background-color: rgb(250, 162, 176);
+  }
+
+  100% {
+    background-color: #d5abff;
+  }
+}
+
+body {
+  -webkit-animation: bgcolor 25s infinite;
+  animation: bgcolor 15s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.logo {
+  width: 15vw;
+}
+
+.nav2 {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+}
+
+#bookingPhoto {
+  width: 300px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox */
+  justify-content: center;
+}
+nav ul a:hover {
+  font-weight: 900;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: block;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav3 {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.indigoAlbum {
+  width: 25vw;
+}
+.indigoAlbum:hover {
+  outline: solid black 2px;
+}
+
+.nav4 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav4 {
+  text-align: center;
+}
+
+.flash {
+  animation: flash 3s infinite;
+}
+
+.ticker-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* background-color: #ffffff; */
+  color: rgb(0, 0, 0);
+  overflow: hidden;
+  height: 45px;
+  padding-top: 15px;
+}
+
+.ticker-wrap {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+
+.ticker-move {
+  display: flex;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.ticker-item {
+  padding: 0 2rem;
+  white-space: nowrap;
+  font-size: 30px;
+}
+.game1 {
+  width: 100%;
+  text-align: center;
+}
+
+.bookingContainer {
+  padding-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.bookingContainer a {
+  text-decoration: none;
+  color: black;
+}
+
+.bookingContainer a:hover {
+  font-size: large;
+}
+
+.aboutContainer {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* Ensure that the child elements stack vertically */
+  align-items: center; /* Center children horizontally */
+}
+
+.aboutContainer img {
+  width: 400px;
+}
+
+.aboutContainerTxt {
+  text-align: left;
+  width: 40%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .aboutContainerTxt {
+    width: 80%;
+  }
+
+  .logo {
+    width: 30vw;
+  }
+
+  .indigoAlbum {
+    width: 50vw;
+  }
+}
